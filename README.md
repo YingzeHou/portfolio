@@ -1,3 +1,8 @@
+# Personal Portfolio Website
+## Powered by React.js
+Regularly Update for Online Resume and Study Notes Purpose\
+Deploy at: https://yingzehou.github.io/portfolio/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
