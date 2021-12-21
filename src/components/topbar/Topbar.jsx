@@ -1,3 +1,4 @@
+import { Lightbulb } from "@mui/icons-material"
 import "./topbar.scss"
 
 export default function Topbar(){
@@ -5,6 +6,7 @@ export default function Topbar(){
         <div className="topbar">
             <div className="wrapper">
                 <div className="left">
+                    <Lightbulb/>
                     <a href="#cover" className="logo">Portfolio</a>
                 </div>
                 <div className="right">

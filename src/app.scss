@@ -4,7 +4,9 @@
     .section{
         width: 100%;
         height:calc(100vh - 60px);
-        background-color: red;
+        background-image: url("./asset/cover.gif") ;
+        background-repeat: no-repeat;
+        background-position: center;
         position: relative;
         top: 60px;
         scroll-behavior: smooth;

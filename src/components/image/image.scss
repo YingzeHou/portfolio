@@ -1,0 +1,33 @@
+.WechatCode{
+    // position: fixed;
+    // top: calc(80vh / 2);
+    // left: calc(70vw / 2);
+    // width: 500px;
+    // height: 500px;
+
+    // animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+    background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
