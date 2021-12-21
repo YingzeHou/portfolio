@@ -24,16 +24,24 @@ img {
     border: 5px solid black;
     border-radius: 10px;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 50vh;
+    left: 50vw;
     transform: translate(-50%, -50%);
     z-index: 2;
-    width: 25%;
-    height: 55%;
+    width: 30vw;
+    height: 65vh;
     text-align: center;
     animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
     z-index: 3;
 
+    .desc{
+        text-align: center;
+        color: white;
+        float: center;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 5px;
+    }
     &.active{
         animation: fadeout 1s;
     }

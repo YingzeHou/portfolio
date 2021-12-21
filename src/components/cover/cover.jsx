@@ -27,13 +27,13 @@ export default function Cover({QRopen, setQRopen}) {
                 <div className="itemContainer">
                     <GitHub className="icon"/>
                     <span>
-                        <a href="https://github.com/YingzeHou">GitHub</a>
+                        <a href="https://github.com/YingzeHou" target="_blank">GitHub</a>
                     </span>
                 </div>
                 <div className="itemContainer">
                     <LinkedIn className="icon"/>
                     <span>
-                        <a href="https://www.linkedin.com/in/yingze-hou-1630971b1/">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/yingze-hou-1630971b1/" target="_blank">LinkedIn</a>
                     </span>
                 </div>
                 <div className="itemContainer">
