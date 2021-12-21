@@ -1,5 +1,5 @@
 import "./cover.scss"
-import {Email, GitHub, LinkedIn, Person, Phone} from '@mui/icons-material';
+import {Email, GitHub, LinkedIn, Phone} from '@mui/icons-material';
 import WechatCode from "../image/image";
 
 export default function Cover({QRopen, setQRopen}) {
