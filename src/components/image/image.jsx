@@ -1,12 +1,15 @@
 import "./image.scss"
-import back from "../../asset/back.jpeg"
+import code from "../../asset/code.jpg"
 
 export default function WechatCode({QRopen, setQRopen}) {
     return (
         <div className="WechatCode">
-
-            Hello
-            {/* <img src={back} alt="back"/> */}
+            <div className={"codeBox " + (!QRopen && "active")}>
+                <div className="close" onClick={()=>setQRopen(!QRopen)}>
+                    x
+                </div>
+                <img src={code} alt="code"/>
+            </div>
         </div>
     )
 }

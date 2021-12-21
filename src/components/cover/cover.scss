@@ -2,6 +2,7 @@
     background-image: url("../../asset/cover.gif") ;
     background-repeat: no-repeat;
     background-position: center;
+    z-index: 1;
 
     .name{
         font-size: 50px;
@@ -22,6 +23,9 @@
     }
 
     .infotag{
+        &.active{
+            filter: blur(10px);
+        }
         display: flex;
         margin-top: calc(60vh / 2);
         justify-content: center;
@@ -50,9 +54,14 @@
                 }
             }
         }
-    }
 
-    &.active{
-        opacity: 0.4;
+        .itemContainer:hover,
+        .itemContainer:focus{
+            font-size: 22px;
+            color: burlywood;
+            .iconW{
+                fill: burlywood;
+            }
+        }
     }
 }

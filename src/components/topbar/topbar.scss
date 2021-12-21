@@ -36,6 +36,11 @@
                 color: inherit;
                 margin-right: 20px;
             }
+
+            .navItem:hover,
+            .navItem:focus{
+                color: burlywood;
+            }
         }
     }
 }

@@ -1,33 +1,50 @@
-.WechatCode{
-    // position: fixed;
-    // top: calc(80vh / 2);
-    // left: calc(70vw / 2);
-    // width: 500px;
-    // height: 500px;
+img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+.close {
+    margin-right: 5px;
+    color: white;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+.close:hover,
+.close:focus {
+    color: brown;
+    text-decoration: none;
+    cursor: pointer;
+}
+.codeBox{
+    background-color:black;
+    border: 5px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 25%;
+    height: 55%;
+    text-align: center;
+    animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    z-index: 3;
 
-    // animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-
-    background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-  border: 3px solid #f1f1f1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
+    &.active{
+        animation: fadeout 1s;
+    }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @keyframes fadein {
     from { opacity: 0; }
-    to   { opacity: 1; }
+    to   { opacity: 5; }
+}
+@keyframes out {
+    from { opacity: 1; }
+    to   { opacity: 0; }
 }
