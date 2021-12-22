@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7377be01.css",
-    "main.js": "/portfolio/static/js/main.d20e4c69.js",
+    "main.css": "/portfolio/static/css/main.f9688752.css",
+    "main.js": "/portfolio/static/js/main.1b0f95bd.js",
     "static/media/avatar.JPG": "/portfolio/static/media/avatar.45198be8a5ade6af577b.JPG",
     "static/media/carnegie.png": "/portfolio/static/media/carnegie.c688b2c85a0e1f7f1f2b.png",
     "static/media/cover.gif": "/portfolio/static/media/cover.2214299de93162d70fb8.gif",
@@ -9,12 +9,14 @@
     "static/media/sanfan.jpg": "/portfolio/static/media/sanfan.93aa8cde8c274513ca51.jpg",
     "static/media/arrowdown.png": "/portfolio/static/media/arrowdown.bd4666e9cacf9c8ad009.png",
     "static/media/uw.jpg": "/portfolio/static/media/uw.07af4c852cb4cc7f6ad6.jpg",
+    "static/media/meituan.png": "/portfolio/static/media/meituan.c45cd17a5cd593a92361.png",
+    "static/media/xunxiang.svg": "/portfolio/static/media/xunxiang.1404b3212325d374a98c8afd82e76023.svg",
     "index.html": "/portfolio/index.html",
-    "main.7377be01.css.map": "/portfolio/static/css/main.7377be01.css.map",
-    "main.d20e4c69.js.map": "/portfolio/static/js/main.d20e4c69.js.map"
+    "main.f9688752.css.map": "/portfolio/static/css/main.f9688752.css.map",
+    "main.1b0f95bd.js.map": "/portfolio/static/js/main.1b0f95bd.js.map"
   },
   "entrypoints": [
-    "static/css/main.7377be01.css",
-    "static/js/main.d20e4c69.js"
+    "static/css/main.f9688752.css",
+    "static/js/main.1b0f95bd.js"
   ]
 }
