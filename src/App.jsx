@@ -4,6 +4,7 @@ import Topbar from "./components/topbar/Topbar";
 import "./app.scss"
 import Cover from "./components/cover/cover";
 import { useState } from "react";
+import Experience from "./components/experience/experience";
 
 function App() {
   const [QRopen, setQRopen] = useState(false)
@@ -15,6 +16,7 @@ function App() {
         <Cover QRopen={QRopen} setQRopen={setQRopen}/>
         <Intro/>
         <Portfolio/>
+        <Experience/>
       </div>
     </div>
   );

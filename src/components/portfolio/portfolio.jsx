@@ -7,6 +7,7 @@ import sanfan from "../../asset/sanfan.jpg";
 import carnegie from "../../asset/carnegie.png";
 import uw from "../../asset/uw.jpg";
 import { Fade } from "react-reveal";
+import { Image, StyleSheet } from "react-native-web"
 
 export default function Portfolio({contentChange, setContentChange}) {
     const [currSlide, setCurrSlide] = useState(0);
@@ -30,6 +31,20 @@ export default function Portfolio({contentChange, setContentChange}) {
         },
     ]
 
+    const styles = StyleSheet.create({
+        container: {
+          paddingTop: 50,
+        },
+        tinyLogo: {
+          width: 50,
+          height: 50,
+        },
+        logo: {
+          width: 300,
+          height: 300,
+          borderRadius: 150
+        },
+    });
     // useEffect(() => {
         
     //     switch(selected){
@@ -64,11 +79,13 @@ export default function Portfolio({contentChange, setContentChange}) {
                 {eduList.map((d) =>(
                 <div className="container">
                         <div className="item">
+                        <Fade top>
                         <div className="left">
                             <div className="imgContainer">
-                                <img className="logo1" src={sanfan} alt="" />
-                                <img className="logo2" src={carnegie} alt="" />
-                                <img className="logo3" src={uw} alt="" />
+                            <Image className="logo"
+                                style={styles.logo}
+                                source={d.img}
+                            />
                             </div>
                         </div>
                         <div className="right">
@@ -94,6 +111,7 @@ export default function Portfolio({contentChange, setContentChange}) {
                                 <a href={d.link2} target="_blank">{d.text2}</a>
                             </div>
                         </div>
+                        </Fade>
                     </div>
                 </div>
                  ))}
