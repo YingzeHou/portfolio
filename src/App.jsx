@@ -7,6 +7,7 @@ import { useState } from "react";
 
 function App() {
   const [QRopen, setQRopen] = useState(false)
+  const [contentChange, setContentChange] = useState(false);
   return (
     <div className="app">
       <Topbar/>

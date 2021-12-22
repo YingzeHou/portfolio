@@ -11,68 +11,112 @@
         color: dimgray;
     }
     ul.navTag{
-        margin: 10px;
         padding: 0;
         list-style: none;
         display: flex;
     }
-    .container{
-        margin-left: 5vw;
-        width: 40%;
+
+    .slider{
+        margin-top: 25vh;
+        height: 60vh;
         display: flex;
-        align-items: center;
-        justify-content: end;
+        position: absolute;
+        left: 0;
+        transition: all 1s ease-out;
 
-        .item{
-            
-            &.change{
-                animation: fadeIn 2s linear;
+        .container{
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-                @keyframes fadeIn {
-                    from{opacity: 0;}
-                    to{opacity: 1;}
-                }
-            }
-            img{
-                top: calc(210vh);
-                width: 20vw;
-                padding: 5vh 20vh;
-                border-radius: 50%;
-            }
-
-            h3{
-                padding: 10px;
-                font-size: 20px;
-            }
-
-            .tag{
-                margin-bottom: 5px;
-    
-                span{
-                    padding-top: 1px;
-                    padding-bottom: 1px;
-                    padding-left: 5px;
-                    padding-right: 5px;
-                    background-color: $mainColor;
-                    color: rgb(224, 224, 224);
-                    border-radius: 5px;
-                    font-size: 12px;
-                    font-weight: 700;
-                    margin-left: 10px;
-                }
-            }
-
-            .intro{
-                margin-top: 10px;
-                margin-left: 10px;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                width: 90%;
-                background-color: rgb(230, 230, 230);
-                border-radius: 10px;
+            .item{
+                width: 80%;
+                height: 98%;
                 border: 2px solid $mainColor;
-                font-size: 15px;
-                padding-left: 10px;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .left{
+                    height: 100%;
+                    display: flex;
+                    flex: 4;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .imgContainer{
+                    width: 350px;
+                    padding: 3rem;
+                }
+                .logo1{
+                    width: inherit;
+                    height: inherit;
+                    margin-bottom: 10vh;
+                    margin-left: 15vw;
+                    border-radius: 50%;
+                }
+                .logo2{
+                    width: inherit;
+                    height: inherit;
+                    margin-bottom: 7vh;
+                    margin-left: calc(15vw + 100vw);
+                    border-radius: 50%;
+                }
+                .logo3{
+                    width: inherit;
+                    height: inherit;
+                    margin-bottom: 7vh;
+                    margin-left: calc(15vw + 200vw);
+                    border-radius: 50%;
+                }
+
+                .right{
+                    flex: 6;
+                    height: 100%;
+                    h3{
+                        padding: 10px;
+                        font-size: 20px;
+                    }
+
+                    .tag{
+                        margin-bottom: 5px;
+                        
+                        span{
+                            padding-top: 1px;
+                            padding-bottom: 1px;
+                            padding-left: 5px;
+                            padding-right: 5px;
+                            background-color: $mainColor;
+                            color: rgb(224, 224, 224);
+                            border-radius: 5px;
+                            font-size: 12px;
+                            font-weight: 700;
+                            margin-left: 10px;
+                        }
+                    }
+                    .intro{
+                        margin-top: 10px;
+                        margin-left: 10px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        width: 90%;
+                        background-color: rgb(230, 230, 230);
+                        border-radius: 10px;
+                        border: 2px solid $mainColor;
+                        font-size: 16px;
+                        padding-left: 10px;
+                    }
+                    a{
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 10px;
+                        margin-left: 10px;
+                        width: 15vw;
+                    }
+                }
             }
         }
     }
