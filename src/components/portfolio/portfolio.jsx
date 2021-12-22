@@ -47,6 +47,7 @@ export default function Portfolio({contentChange, setContentChange}) {
     return (
         <div className="portfolio" id="education">
             <h1>Education Background</h1>
+            <Fade top>
             <ul className="navTag">
                 {list.map((item)=>(
                     <EducationList 
@@ -58,6 +59,7 @@ export default function Portfolio({contentChange, setContentChange}) {
                     setCurrSlide = {setCurrSlide}/>
                 ))}
             </ul>
+            </Fade>
             <div className="slider" style={{transform: `translateX(-${currSlide *100}vw)`}}>
                 {eduList.map((d) =>(
                 <div className="container">
