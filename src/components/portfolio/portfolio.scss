@@ -88,6 +88,12 @@
                         padding-left: 10px;
                     }
                     a{
+                        background-color: $mainColor;
+                        color: white;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        border-radius: 20px;
                         display: flex;
                         flex-direction: column;
                         margin-top: 10px;

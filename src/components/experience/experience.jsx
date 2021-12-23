@@ -1,6 +1,7 @@
 import "./experience.scss"
 import { Image, StyleSheet } from "react-native-web"
 import {expList} from "../../expData.js"
+import { subList } from "../../subExpData"
 import { useState, useEffect } from "react"
 import { Fade, Roll } from "react-reveal"
 
@@ -44,25 +45,25 @@ export default function Experience() {
     return (
         <div className={cardSelect>0? "experience blur": "experience"} id="experience">
             <h1>Experiences</h1>
-            {expList.map((l)=>(
-                <div className={cardSelect>0? "introBox active": "introBox"}>
-                    <div className="introContainer">
-                        <div className="intro">
-                            {data.desc1}
-                            <br />
-                            <br />
-                            {data.desc2}
-                            <br />
-                            <br />
-                            {data.desc3}
-                            <br />
-                            <br />
-                            {data.desc4}
-                        </div>
-                        <button onClick={()=>setCardSelect(0)}>Close</button>
+            <div className={cardSelect>0? "introBox active": "introBox"}>
+                <div className="introContainer">
+                    <div className="intro">
+                        {data.desc1}
+                        <br />
+                        <br />
+                        {data.desc2}
+                        <br />
+                        <br />
+                        {data.desc3}
+                        <br />
+                        <br />
+                        {data.desc4}
                     </div>
+                    <a href={data.link1} target="_blank">{data.text1}</a>
+                    <a href={data.link2} target="_blank">{data.text2}</a>
+                    <button onClick={()=>setCardSelect(0)}>Close</button>
                 </div>
-            ))}
+            </div>
 
             <Roll top>
             <div className="container">
@@ -86,6 +87,14 @@ export default function Experience() {
                 ))}
             </div>
             </Roll>
+            <div className="subTaskContainer">
+                {subList.map((sub)=>(
+                    <div className="subItem">
+                    <h2>{sub.desc}</h2>
+                    <h3>{sub.title}</h3>
+                </div>
+                ))}
+            </div>
             
         </div>
     )

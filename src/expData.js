@@ -16,7 +16,10 @@ export const expList = [
         desc2: "Deployed CI iteration and decrease of online error rate by 100%. Pioneered more than 300 automation test cases with TestNG to cover 3 times more logic and branckes",
         desc3: "Resolved high data load transaction latency by applying RDS, parallel batch I/O, and Redis caching based on sharding algorithm to cut down data retrieval time cost by 60%",
         desc4: "Created Apache Maven framework to reduce 50% of maintenance cost; Innovated staff turnover info statistic desktop app with JavaFX an POI to deduct workload from more than a week to less than five minutes",
-
+        link1:"",
+        text1:"",
+        link2:"",
+        text2:""
     },
     {
         id:2,
@@ -29,6 +32,10 @@ export const expList = [
         desc2: "Transferred over 100 posts from WeChat to web to improve 500% reading rate with Springboot, Vue.js, and MySQL AWS could service",
         desc3: "Founded permission system with Redis and Shiro, as well as AOP concept and RESTful API to shorten post checking period from 2 weeks to 1 hour",
         desc4: "",
+        link1:"https://xunxiang.org/",
+        text1:"Xunxiang Web",
+        link2:"https://github.com/XunxiangTech/XunxiangWikiBase",
+        text2:"Xunxiang WikiBase"
     },
     {
         id:3,       
@@ -41,6 +48,10 @@ export const expList = [
         desc2: "Applied Python for data visualization, using regression model to determine the trend of user activities and predict patterns",
         desc3: "Designed and schemed online activities based on the prediction model to attract target user group during the Christmas",
         desc4: "",
+        link1:"",
+        text1:"",
+        link2:"",
+        text2:""
     },
     {
         id:4,
@@ -53,6 +64,10 @@ export const expList = [
         desc2: "Expediated with Python and Matplotlib to visualize experiment result for multiple schema comparison to generate real-time graph report to ease result interpretation process",
         desc3: "Explored implementation and principles of Azure and Kubernetes for cloud management insigh and formulated solutions for virtual machine cloud based serverless computing BaaS/Faas model",
         desc4: "",
+        link1:"https://github.com/YingzeHou/Bamboo",
+        text1:"Bamboo Algo",
+        link2:"",
+        text2:""
     },
     {
         id:5,
@@ -65,6 +80,10 @@ export const expList = [
         desc2: "Expedited with Python and Pytorch to train on image semantic segmentation neural network to predict segmentation of arbitrary object to achieve equipment detection and condition display",
         desc3: "Embedded U-net model into cooperative Hololens AR glasses to facilitate fire-fighter in more than 60% scenes",
         desc4: "",
+        link1:"https://github.com/EasyVizAR/image-matching",
+        text1:"Image Segmentation",
+        link2:"",
+        text2:""
     },
 
 ]
