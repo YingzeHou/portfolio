@@ -3,7 +3,7 @@ import { Image, StyleSheet } from "react-native-web"
 import {expList} from "../../expData.js"
 import { subList } from "../../subExpData"
 import { useState, useEffect } from "react"
-import { Fade, Roll } from "react-reveal"
+import { Fade, LightSpeed, Roll } from "react-reveal"
 
 export default function Experience() {
     const [data, setData] = useState([])
@@ -87,6 +87,7 @@ export default function Experience() {
                 ))}
             </div>
             </Roll>
+            <LightSpeed left>
             <div className="subTaskContainer">
                 {subList.map((sub)=>(
                     <div className="subItem">
@@ -95,6 +96,7 @@ export default function Experience() {
                 </div>
                 ))}
             </div>
+            </LightSpeed>
             
         </div>
     )

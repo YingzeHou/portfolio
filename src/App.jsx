@@ -5,6 +5,7 @@ import "./app.scss"
 import Cover from "./components/cover/cover";
 import { useState } from "react";
 import Experience from "./components/experience/experience";
+import Skill from "./components/skill/skill";
 
 function App() {
   const [QRopen, setQRopen] = useState(false)
@@ -17,6 +18,7 @@ function App() {
         <Intro/>
         <Portfolio/>
         <Experience/>
+        <Skill/>
       </div>
     </div>
   );

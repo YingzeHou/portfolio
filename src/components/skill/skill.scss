@@ -1,0 +1,35 @@
+.skill{
+    background-color: silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container{
+        width: 20vw;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        animation: floating 3s infinite;
+
+        @keyframes floating {
+            0% { transform: translate(0,  0px); }
+            50%  { transform: translate(0, 15px); }
+            100%   { transform: translate(0px, -0px); }
+        }
+
+        .type{
+            font-size: 30px;
+            font-weight: 800;
+        }
+
+        .imgContainer{
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+}

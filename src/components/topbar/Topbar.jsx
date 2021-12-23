@@ -13,6 +13,7 @@ export default function Topbar(){
                     <a href="#intro" className="navItem">Introduction</a>
                     <a href="#education" className="navItem">Education</a>
                     <a href="#experience" className="navItem">Experience</a>
+                    <a href="#skill" className="navItem">SkillSet</a>
                     <a href="https://yingzehou.gitbook.io/docs/" className="navItem" target="_blank">Blog</a>
                 </div>
             </div>
