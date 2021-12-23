@@ -1,9 +1,12 @@
 import "./experience.scss"
-import meituan from "../../asset/meituan.png"
-import xunxiang from "../../asset/xunxiang.svg"
 import { Image, StyleSheet } from "react-native-web"
+import {expList} from "../../expData.js"
+import { useState, useEffect } from "react"
+import { Fade, Roll } from "react-reveal"
 
 export default function Experience() {
+    const [data, setData] = useState([])
+    const [cardSelect, setCardSelect] = useState(0);
     const styles = StyleSheet.create({
         container: {
           paddingTop: 50,
@@ -13,31 +16,77 @@ export default function Experience() {
           height: 50,
         },
         logo: {
-          width: 200,
-          height: 200,
+          width: 150,
+          height:150,
+          borderRadius: 40,
         },
     });
-
-    const list = [
-        {
-            id:1,
-            src: meituan,
-        },
-        {
-            id:2,
-            src: xunxiang,
+    useEffect(() => {
+        
+        switch(cardSelect){
+            case 1:
+                setData(expList[0]);
+                break;
+            case 2:
+                setData(expList[1]);
+                break;
+            case 3:
+                setData(expList[2]);
+                break;
+            case 4:
+                setData(expList[3]);
+                break;
+            case 5:
+                setData(expList[4]);
+                break;
         }
-    ]
+    }, [cardSelect])
     return (
-        <div className='experience'>
-            <div className="imgContainer">
-                {list.map((l)=>(
-                    <Image
-                    style={styles.logo}
-                    source={l.src}
-                />
+        <div className={cardSelect>0? "experience blur": "experience"} id="experience">
+            <h1>Experiences</h1>
+            {expList.map((l)=>(
+                <div className={cardSelect>0? "introBox active": "introBox"}>
+                    <div className="introContainer">
+                        <div className="intro">
+                            {data.desc1}
+                            <br />
+                            <br />
+                            {data.desc2}
+                            <br />
+                            <br />
+                            {data.desc3}
+                            <br />
+                            <br />
+                            {data.desc4}
+                        </div>
+                        <button onClick={()=>setCardSelect(0)}>Close</button>
+                    </div>
+                </div>
+            ))}
+
+            <Roll top>
+            <div className="container">
+            {expList.map((l)=>(
+                <div className="item" onClick={()=>setCardSelect(l.id)}>
+                    <div className="image">
+                        <Image
+                            style={styles.logo}
+                            source={l.src}
+                            resizeMode="contain"
+                        />
+                    </div>
+                    <div className="time">
+                        {l.time}
+                        <br />
+                        {l.addr}
+                    </div>
+                    <h3>{l.title}</h3>
+                    <h2>{l.position}</h2>
+                </div>
                 ))}
             </div>
+            </Roll>
+            
         </div>
     )
 }

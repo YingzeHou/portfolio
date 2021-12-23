@@ -3,16 +3,12 @@ import EducationList from "../educationList/educationList"
 import { useState, useEffect } from "react"
 import { eduList } from "../../eduData"
 import React from 'react';
-import sanfan from "../../asset/sanfan.jpg";
-import carnegie from "../../asset/carnegie.png";
-import uw from "../../asset/uw.jpg";
-import { Fade } from "react-reveal";
+import { Fade, Zoom } from "react-reveal";
 import { Image, StyleSheet } from "react-native-web"
 
-export default function Portfolio({contentChange, setContentChange}) {
+export default function Portfolio() {
     const [currSlide, setCurrSlide] = useState(0);
     const[selected, setSelected] = useState("highschool");
-    const[data, setData] = useState([]);
     const list = [
         {
             idN:1,
@@ -77,9 +73,9 @@ export default function Portfolio({contentChange, setContentChange}) {
             </Fade>
             <div className="slider" style={{transform: `translateX(-${currSlide *100}vw)`}}>
                 {eduList.map((d) =>(
+                <Zoom top>
                 <div className="container">
                         <div className="item">
-                        <Fade top>
                         <div className="left">
                             <div className="imgContainer">
                             <Image className="logo"
@@ -111,9 +107,9 @@ export default function Portfolio({contentChange, setContentChange}) {
                                 <a href={d.link2} target="_blank">{d.text2}</a>
                             </div>
                         </div>
-                        </Fade>
                     </div>
                 </div>
+                </Zoom>
                  ))}
             </div>
             </div>
