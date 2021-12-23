@@ -6,6 +6,10 @@ li{
     border-radius: 10px;
     cursor: pointer;
 
+    @include mobile{
+        font-size: 12px;
+        margin: 10px;
+    }
     &.active{
         background-color: $mainColor;
         color: rgb(224, 224, 224);

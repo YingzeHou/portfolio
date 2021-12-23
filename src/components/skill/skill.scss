@@ -1,8 +1,13 @@
+@import "../../global.scss";
 .skill{
     background-color: silver;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include mobile{
+        flex-direction: column;
+    }
 
     .container{
         width: 20vw;
@@ -13,6 +18,12 @@
         flex-wrap: wrap;
         animation: floating 3s infinite;
 
+        @include mobile{
+            width: 90vw;
+            height: 90vh;
+            margin-bottom: 5vh;
+        }
+
         @keyframes floating {
             0% { transform: translate(0,  0px); }
             50%  { transform: translate(0, 15px); }
@@ -22,14 +33,33 @@
         .type{
             font-size: 30px;
             font-weight: 800;
+
+            @include mobile{
+                font-size: 20px;
+            }
         }
 
+        .mobileContainer{
+            display: none;
+
+            @include mobile{
+                background-color: transparent;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
         .imgContainer{
             background-color: transparent;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-wrap: wrap;
+
+            @include mobile{
+                display: none;
+            }
         }
     }
 }

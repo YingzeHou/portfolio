@@ -19,6 +19,10 @@
         align-items: center;
         justify-content: center;
 
+        @include mobile{
+            top: 5vh;
+        }
+
         .introContainer{
             height: 45vh;
             width: 50vw;
@@ -30,6 +34,12 @@
             border: 2px solid $mainColor;
             border-radius: 30px;
 
+            @include mobile{
+                width: 80vw;
+                height: 50vh;
+                border-radius: 10px;
+            }
+
             .intro{
                 margin-top: 10px;
                 padding-top: 10px;
@@ -40,6 +50,10 @@
                 border: 2px solid $mainColor;
                 font-size: 16px;
                 padding-left: 10px;
+
+                @include mobile{
+                    font-size: 12px;
+                }
                 
             }
             a{
@@ -54,12 +68,22 @@
                 margin-top: 10px;
                 margin-left: 10px;
                 width: 15vw;
+
+                @include mobile{
+                    font-size: 12px;
+                    width: 60%;
+                }
             }
 
             button{
                 font-size: 25px;
                 border-radius: 30px;
                 margin-bottom: 10px;
+
+                @include mobile{
+                    font-size: 15px;
+                    overflow: hidden;
+                }
             }
         }
 
@@ -77,6 +101,10 @@
         margin-top: 5vh;
         font-size: 60px;
         color: $mainColor;
+        @include mobile{
+            font-size: 20px;
+            margin-top: 2vh;
+        }
     }
     .subTaskContainer{
         margin-top: 5vh;
@@ -85,6 +113,11 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+
+        @include mobile{
+            margin-bottom:2vh;
+            height: 14vh;
+        }
 
         .subItem{
             width: 25vh;
@@ -107,6 +140,13 @@
                 text-align: center;
                 position: absolute;
                 z-index: -1;
+
+                @include mobile{
+                    margin-top: 1vh;
+                    margin-left: 1vh;
+                    margin-right: 1vh;
+                    font-size: 12px;
+                }
             }
             h3{
                 color: $textColor;
@@ -115,10 +155,17 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                @include mobile{
+                    font-size: 10px;
+                }
             }
 
             &:hover{
                 height: 20vh;
+                @include mobile{
+                    height: 10vh;
+                }
                 h3{
                     opacity: 0;
                 }
@@ -135,6 +182,11 @@
         align-items: center;
         justify-content: center;
 
+        @include mobile{
+            flex-direction: column;
+            height: 80vh;
+        }
+
         .item{
             width: 30vh;
             height: 35vh;
@@ -147,6 +199,12 @@
             transition: all 0.5s ease-in;
             position: relative;
 
+            @include mobile{
+                border-radius: 10px;
+                margin-top: 1vh;
+                height: 30vh;
+            }
+
             .time{
                 width: 30vh;
                 height: 10vh;
@@ -158,12 +216,20 @@
                 text-align: center;
                 position: absolute;
                 z-index: -1;
+                
+                @include mobile{
+                    display: none;
+                }
             }
             .image{
                 margin-top: 2vh;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                @include mobile{
+                    display: none;
+                }
             }
 
             h3{

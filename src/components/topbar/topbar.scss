@@ -26,6 +26,9 @@
         .right{
             display: flex;
             align-items: center;
+            @include mobile{
+                display: none;
+            }
 
             .navItem{
                 display: flex;

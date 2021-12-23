@@ -9,11 +9,20 @@
         font-size: 50px;
         margin-top: 10px;
         color: dimgray;
+
+        @include mobile{
+            font-size: 20px;
+        }
     }
     ul.navTag{
         padding: 0;
         list-style: none;
         display: flex;
+
+        @include mobile{
+            margin-top: 6vh;
+            flex-wrap: wrap;
+        }
     }
 
     .slider{
@@ -38,6 +47,10 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                @include mobile{
+                    flex-direction: column;
+                    width: 98%;
+                }
 
                 .left{
                     height: 100%;
@@ -45,10 +58,15 @@
                     flex: 4;
                     align-items: center;
                     justify-content: center;
+
+                    @include mobile{
+                        display: none;
+                    }
                 }
 
                 .imgContainer{
                     width: 350px;
+
                 }
 
                 .right{
@@ -57,6 +75,9 @@
                     h3{
                         padding: 10px;
                         font-size: 20px;
+                        @include mobile{
+                            font-size: 12px;
+                        }
                     }
 
                     .tag{
@@ -73,6 +94,9 @@
                             font-size: 12px;
                             font-weight: 700;
                             margin-left: 10px;
+                            @include mobile{
+                                font-size: 10px;
+                            }
                         }
                     }
                     .intro{
@@ -86,6 +110,10 @@
                         border: 2px solid $mainColor;
                         font-size: 16px;
                         padding-left: 10px;
+
+                        @include mobile{
+                            font-size: 12px;
+                        }
                     }
                     a{
                         background-color: $mainColor;
@@ -99,6 +127,11 @@
                         margin-top: 10px;
                         margin-left: 10px;
                         width: 15vw;
+
+                        @include mobile{
+                            font-size: 10px;
+                            width: 60%;
+                        }
                     }
                 }
             }

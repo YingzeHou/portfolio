@@ -1,2 +1,10 @@
 $mainColor: rgb(43, 43, 43);
-$textColor: rgb(233, 209, 179)
+$textColor: rgb(233, 209, 179);
+
+$width: 768px;
+
+@mixin mobile{
+    @media (max-width: #{$width}){
+        @content
+    }
+}

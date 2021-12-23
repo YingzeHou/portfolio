@@ -9,8 +9,9 @@ export default function Skill() {
           paddingTop: 50,
         },
         tinyLogo: {
-          width: 50,
-          height: 50,
+          width: 45,
+          height: 45,
+          margin:4
         },
         logo: {
           width: 110,
@@ -21,7 +22,6 @@ export default function Skill() {
     });
     return (
         <div className="skill" id='skill'>
-
             {skillList.map((skill)=>(
                 <div className="container">
                 <div className="type">
@@ -31,6 +31,15 @@ export default function Skill() {
                     {skill.images.map((s)=>(
                         <Image
                             style={styles.logo}
+                            source={s}
+                            resizeMode="contain"
+                        />
+                    ))}
+                </div>
+                <div className="mobileContainer">
+                    {skill.images.map((s)=>(
+                        <Image
+                            style={styles.tinyLogo}
                             source={s}
                             resizeMode="contain"
                         />
