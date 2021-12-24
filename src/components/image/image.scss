@@ -1,58 +1,71 @@
-img {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-}
-.close {
-    margin-right: 5px;
-    color: white;
-    float: right;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-.close:hover,
-.close:focus {
-    color: brown;
-    text-decoration: none;
-    cursor: pointer;
-}
-.codeBox{
-    background-color:black;
-    border: 5px solid black;
-    border-radius: 10px;
-    position: absolute;
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 30vw;
-    height: 30vw;
-    text-align: center;
-    animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-    z-index: 3;
-
-    .desc{
-        text-align: center;
+@import "../../global.scss";
+.WechatCode{
+    img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+    
+        @include mobile{
+            height: 90%;
+        }
+    }
+    .close {
+        margin-right: 5px;
         color: white;
-        float: center;
+        float: right;
         font-size: 20px;
         font-weight: bold;
-        margin-top: 5px;
+      }
+      
+    .close:hover,
+    .close:focus {
+        color: brown;
+        text-decoration: none;
+        cursor: pointer;
     }
-    &.active{
-        animation: fadeout 1s;
+    .codeBox{
+        background-color:black;
+        border: 5px solid black;
+        border-radius: 10px;
+        position: absolute;
+        top: 50vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 30vw;
+        height: 30vw;
+        text-align: center;
+        animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+        z-index: 3;
+    
+        @include mobile{
+            width: 90vw;
+            height: 90vw;
+            top: 45vh;
+        }
+    
+        .desc{
+            text-align: center;
+            color: white;
+            float: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        &.active{
+            animation: fadeout 1s;
+        }
     }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 5; }
-}
-@keyframes out {
-    from { opacity: 1; }
-    to   { opacity: 0; }
+    
+    /* Safari, Chrome and Opera > 12.1 */
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 5; }
+    }
+    @keyframes out {
+        from { opacity: 1; }
+        to   { opacity: 0; }
+    }
 }

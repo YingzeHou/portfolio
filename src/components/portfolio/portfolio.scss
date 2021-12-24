@@ -11,6 +11,7 @@
         color: dimgray;
 
         @include mobile{
+            margin-top: 5vh;
             font-size: 20px;
         }
     }
@@ -20,7 +21,7 @@
         display: flex;
 
         @include mobile{
-            margin-top: 6vh;
+            margin-top: 2vh;
             flex-wrap: wrap;
         }
     }
@@ -32,6 +33,10 @@
         position: absolute;
         left: 0;
         transition: all 1s ease-in-out;
+
+        @include mobile{
+            margin-top: 20vh;
+        }
 
         .container{
             width: 100vw;
