@@ -47,7 +47,7 @@ export default function Experience() {
             <h1>Experiences</h1>
             <div className={cardSelect>0? "introBox active": "introBox"}>
                 <div className="introContainer">
-                    <div className="intro">
+                    {/* <div className="intro"> */}
                         {data.desc1}
                         <br />
                         <br />
@@ -58,14 +58,15 @@ export default function Experience() {
                         <br />
                         <br />
                         {data.desc4}
-                    </div>
+                    {/* </div> */}
                     <a href={data.link1} target="_blank">{data.text1}</a>
                     <a href={data.link2} target="_blank">{data.text2}</a>
                     <button onClick={()=>setCardSelect(0)}>Close</button>
                 </div>
             </div>
 
-            <Roll top>
+            {/* <Roll top> */}
+            <LightSpeed left>
             <div className="container">
             {expList.map((l)=>(
                 <div className="item" onClick={()=>setCardSelect(l.id)}>
@@ -86,8 +87,8 @@ export default function Experience() {
                 </div>
                 ))}
             </div>
-            </Roll>
-            <LightSpeed left>
+            {/* </Roll> */}
+            {/* <LightSpeed left> */}
             <div className="subTaskContainer">
                 {subList.map((sub)=>(
                     <div className="subItem">

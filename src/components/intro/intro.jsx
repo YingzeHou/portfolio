@@ -1,7 +1,7 @@
 import"./intro.scss"
-import avatar from "../../asset/avatar.JPG"
-import down from "../../asset/arrowdown.png"
-import { ArrowDownward, ArrowDropDown, KeyboardArrowDownSharp } from "@mui/icons-material"
+// import avatar from "../../asset/avatar.JPG"
+import avatar from "../../asset/badge.jpg"
+import { KeyboardArrowDownSharp } from "@mui/icons-material"
 import {init} from "ityped"
 import{useEffect, useRef} from "react"
 import { Fade } from "react-reveal"
@@ -14,7 +14,7 @@ export default function Intro() {
             showCursor:true,
             backDelay: 1000,
             backSpeed: 60,
-            strings:["Student @ UW-Madison", "Research Assistant @ DBMS/AR Field", "Previous SDE Intern @ Meituan"],
+            strings:["Student @ UW-Madison", "Research Assistant @ DBMS/AR Field", "Previous SDE Intern @ Meituan and Anaplan", "Ethusiastic Learner"],
         });
     }, [])
     return (

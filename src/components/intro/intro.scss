@@ -25,12 +25,12 @@
             }
             img{
                 top: 100vh;
-                margin-left: 2vw;
+                margin-left: 5vw;
                 display: flex;
                 align-items: flex-end;
                 justify-content: center;
                 float: right;
-                width:70%;
+                width:60%;
                 border-radius: 50%;
 
                 @include mobile{

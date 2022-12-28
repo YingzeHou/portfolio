@@ -73,7 +73,7 @@ export default function Portfolio() {
             </Fade>
             <div className="slider" style={{transform: `translateX(-${currSlide *100}vw)`}}>
                 {eduList.map((d) =>(
-                <Zoom top>
+                // <Zoom top>
                 <div className="container">
                         <div className="item">
                         <div className="left">
@@ -109,7 +109,7 @@ export default function Portfolio() {
                         </div>
                     </div>
                 </div>
-                </Zoom>
+                // </Zoom>
                  ))}
             </div>
             </div>
