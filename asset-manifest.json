@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ffab1312.css",
-    "main.js": "/portfolio/static/js/main.17c45d66.js",
-    "static/media/avatar.JPG": "/portfolio/static/media/avatar.45198be8a5ade6af577b.JPG",
+    "main.css": "/portfolio/static/css/main.0eed40cf.css",
+    "main.js": "/portfolio/static/js/main.a3f1f52e.js",
+    "static/media/badge.jpg": "/portfolio/static/media/badge.b972f4732d8fc183b5fd.jpg",
     "static/media/carnegie.png": "/portfolio/static/media/carnegie.c688b2c85a0e1f7f1f2b.png",
     "static/media/cover.gif": "/portfolio/static/media/cover.2214299de93162d70fb8.gif",
     "static/media/json.png": "/portfolio/static/media/json.53b578a7a9f13c556e3e.png",
@@ -14,10 +14,8 @@
     "static/media/docker.png": "/portfolio/static/media/docker.ed7146f08645fbd2c65f.png",
     "static/media/nodejs.png": "/portfolio/static/media/nodejs.d980d9636ace07ad3dde.png",
     "static/media/aws.png": "/portfolio/static/media/aws.99ae03c5e8dbc24c9d7e.png",
-    "static/media/sohu.png": "/portfolio/static/media/sohu.599fff70ce3835eaa9a5.png",
     "static/media/postman.png": "/portfolio/static/media/postman.c6ae6caa76724922859b.png",
     "static/media/vue.png": "/portfolio/static/media/vue.9986370cce737ce89cfb.png",
-    "static/media/arrowdown.png": "/portfolio/static/media/arrowdown.bd4666e9cacf9c8ad009.png",
     "static/media/uwresearch.jpg": "/portfolio/static/media/uwresearch.c31d9a19825723a4f797.jpg",
     "static/media/uw.jpg": "/portfolio/static/media/uw.07af4c852cb4cc7f6ad6.jpg",
     "static/media/xunxiang.png": "/portfolio/static/media/xunxiang.8eb7590679d4b8afd67d.png",
@@ -32,11 +30,11 @@
     "static/media/redis.png": "/portfolio/static/media/redis.52a85440d0cb10638fe8.png",
     "static/media/java.png": "/portfolio/static/media/java.6c64373d3b7415758078.png",
     "index.html": "/portfolio/index.html",
-    "main.ffab1312.css.map": "/portfolio/static/css/main.ffab1312.css.map",
-    "main.17c45d66.js.map": "/portfolio/static/js/main.17c45d66.js.map"
+    "main.0eed40cf.css.map": "/portfolio/static/css/main.0eed40cf.css.map",
+    "main.a3f1f52e.js.map": "/portfolio/static/js/main.a3f1f52e.js.map"
   },
   "entrypoints": [
-    "static/css/main.ffab1312.css",
-    "static/js/main.17c45d66.js"
+    "static/css/main.0eed40cf.css",
+    "static/js/main.a3f1f52e.js"
   ]
 }
